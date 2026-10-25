@@ -80,7 +80,11 @@ def _clean_results(response):
             {
                 "title": item.get("title") or "(no title)",
                 "url": item.get("url") or "(no URL)",
-                "snippet": item.get("snippet") or "(no snippet available)",
+                "snippet": (
+                    item.get("content")
+                    or item.get("snippet")
+                    or "(no snippet available)"
+                ),
             }
         )
 
