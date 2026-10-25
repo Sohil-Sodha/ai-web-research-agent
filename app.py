@@ -27,7 +27,7 @@ def show_results(results):
 
         print(f"{number}. {result['title']}")
         print(f"   URL: {result['url']}")
-        print("   {snippet}\n")
+        print(f"   {snippet}\n")
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
     print("=" * 50)
 
     try:
-        question = input("\nWhat would you like to research? ")
+        question = input("\nWhat would you like to research?:  ")
 
     except (EOFError, KeyboardInterrupt):
         print("\nGoodbye!")
