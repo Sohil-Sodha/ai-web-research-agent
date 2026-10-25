@@ -37,7 +37,7 @@ def main():
     print("=" * 50)
 
     try:
-        question = input("\nWhat would you like to research?:  ")
+        question = input("\nWhat would you like to research?: ")
 
     except (EOFError, KeyboardInterrupt):
         print("\nGoodbye!")
