@@ -76,7 +76,7 @@ def _download(url):
             response.raise_for_status()
 
             content_type = response.headers.get("Content-Type", "")
-
+            
             if content_type and "html" not in content_type and "text" not in content_type:
                 raise ExtractionError("This link is not a normal webpage (for example a PDF or image).")
             
